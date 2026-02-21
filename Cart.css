@@ -1,0 +1,116 @@
+/* Import a clean modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --primary-blue: #003366;    /* Deep Navy */
+  --accent-blue: #0056b3;     /* Brighter Blue for hover */
+  --text-black: #000000;      /* Pure Black for high contrast */
+  --text-muted: #4b5563;      /* Dark Gray */
+  --bg-white: #ffffff;
+  --bg-light: #f1f5f9;
+  --border-color: #000000;    /* High contrast border */
+}
+
+.cart-wrapper {
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-black);
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Alignment Logic */
+.cart-card {
+  background: var(--bg-white);
+  border: 2px solid var(--border-color); /* Black border for contrast */
+  border-radius: 0px; /* Sharp modern corners or slight 4px radius */
+  display: flex;
+  flex-direction: column; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.cart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px var(--primary-blue); /* Brutalist shadow style */
+}
+
+.cart-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Prevents stretching */
+  border-bottom: 2px solid var(--border-color);
+  background-color: #eee; /* Fallback color for broken images */
+}
+
+.cart-info {
+  padding: 20px;
+  flex-grow: 1; /* This pushes the button to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-black);
+}
+
+.cart-info h3 {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 5px 0 15px 0;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-top: auto; /* Ensures price sits above the button */
+  padding-bottom: 15px;
+}
+
+/* High Contrast Button */
+.delete-btn {
+  background-color: var(--primary-blue);
+  color: var(--bg-white);
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+  text-transform: uppercase;
+}
+
+.delete-btn:hover {
+  background-color: var(--text-black);
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 100px 20px;
+  border: 3px dashed var(--border-color);
+  background: var(--bg-white);
+}
