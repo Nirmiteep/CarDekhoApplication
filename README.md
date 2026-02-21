@@ -1,45 +1,38 @@
-## CarDekho React App
+CarDekho - Full Stack Automotive Platform
+A robust web application designed for car enthusiasts and administrators to manage an extensive collection of automobiles. This project features a high-contrast Blue, White, and Black UI, offering a premium experience for both shoppers and admins.
 
-Vite + React SPA that lists cars, allows authenticated users to add new inventory, and provides minimal login/register flows for demos.
+#Key Features
+-Admin Dashboard: Manage the car inventory, add new models, and oversee user accounts.
+-Dynamic Car Catalog: Browse available cars with high-contrast visual cards.
+-Persistent Shopping Cart: Add your dream cars to a personalized cart with real-time updates.
+-Responsive Design: Optimized for a seamless experience across desktop and mobile devices.
+-Secure API: Built with a Spring Boot backend and MySQL for reliable data integrity.
 
-### Prerequisites
-- Node.js 18+
-- npm 10+
+Frontend,Backend,Database
+React (Vite),Java 17 / Spring Boot,MySQL
+Axios (API Requests),Spring Data JPA (Hibernate),Workbench
+CSS3 (High-Contrast Custom UI),Maven (Dependency Management),
 
-### Install dependencies
-```bash
-npm install
-```
+PROJECT STRUCTURE
+CarDekho/
+├── src/                # React Source Code
+│   ├── Admin/          # Admin-only components (AdminHome, ManageUsers)
+│   ├── components/     # Reusable UI (Navbar, AddCar, ViewCars)
+│   ├── App.jsx         # Main routing and logic
+│   └── Cart.css        # Premium High-Contrast Styling
+├── server/             # Spring Boot Backend
+│   └── src/main/java   # Controller, Service, and Entity layers
+├── public/             # Static Assets
+└── README.md           # Project Documentation
 
-### Run the mock API server
-The frontend talks to `http://localhost:8080`. Start the lightweight Express server (located in `server/index.js`) in a dedicated terminal:
-```bash
-npm run server
-```
 
-The server persists state in `server/db.json`. It ships with a demo user:
-- Email: `demo@cardekho.com`
-- Password: `Password@123`
+🤝 Contributing
+1)Fork the Project.
 
-### Start the React dev server
-In a second terminal:
-```bash
-npm run dev
-```
+2)Create your Feature Branch (git checkout -b feature/NewFeature).
 
-Visit the dev server URL that Vite prints (typically `http://localhost:5173`).
+3)Commit your Changes (git commit -m 'Add some NewFeature').
 
-### Available npm scripts
-- `npm run server` – start the Express mock API
-- `npm run dev` – Vite development server
-- `npm run build` – production build
-- `npm run preview` – preview production build
-- `npm run lint` – run ESLint
+4)Push to the Branch (git push origin feature/NewFeature).
 
-### API endpoints
-- `GET /cars`
-- `POST /cars` – requires `Authorization: Bearer <token>` header
-- `POST /register`
-- `POST /login`
-
-Feel free to edit `server/db.json` to seed additional data.
+5)Open a Pull Request.
