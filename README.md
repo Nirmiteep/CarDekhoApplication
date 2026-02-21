@@ -1,11 +1,19 @@
 CarDekho - Full Stack Automotive Platform
-A robust web application designed for car enthusiasts and administrators to manage an extensive collection of automobiles. This project features a high-contrast Blue, White, and Black UI, offering a premium experience for both shoppers and admins.
+
+A robust web application designed for car enthusiasts and administrators to manage an extensive collection of automobiles. 
+
+This project features a high-contrast Blue, White, and Black UI, offering a premium experience for both shoppers and admins.
 
 #Key Features
+
 -Admin Dashboard: Manage the car inventory, add new models, and oversee user accounts.
+
 -Dynamic Car Catalog: Browse available cars with high-contrast visual cards.
+
 -Persistent Shopping Cart: Add your dream cars to a personalized cart with real-time updates.
+
 -Responsive Design: Optimized for a seamless experience across desktop and mobile devices.
+
 -Secure API: Built with a Spring Boot backend and MySQL for reliable data integrity.
 
 Frontend,Backend,Database
